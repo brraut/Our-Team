@@ -1,0 +1,139 @@
+/* 
+	This is a modal designed with html and css only. Fully responsive template for your "our team" section.
+    Hope this template helps you in your project.
+   
+    Developed By:       Bishwo Raj Raut
+
+    Contact:
+    Facebook:           https://www.facebook.com/bishow.raut.7
+    Linkedin:           https://www.linkedin.com/in/bishwo-raut-53371b186
+    GitHub:             https://github.com/brraut
+	Instagram:          https://www.instagram.com/brraut/
+	 
+*/
+
+/* Team Section Begins */
+.team-wrapper {
+	position: relative;
+	transition: all 2s linear;
+	overflow-x: hidden;
+}
+.team-wrapper .main-title {
+	text-align: center;
+
+	font-size: 36px;
+	font-weight: bold;
+}
+.team-wrapper ul {
+	margin: 120px auto 60px auto;
+	margin-left: -3%;
+	padding: 0;
+}
+
+.team-wrapper ul li {
+	list-style: none;
+	display: inline-block;
+	width: 15%;
+	box-shadow: 0px 0px 10px 1px #bfbdbd;
+	background: #d1dde6;
+	margin-top: -4%;
+	/* margin-bottom: -10px; */
+	margin-left: 8%;
+	transform: rotate(45deg);
+	transition: 0.5s;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.team-wrapper ul li:hover {
+	opacity: 1;
+}
+
+.team-wrapper ul li.item:nth-child(7n + 5) {
+	margin-left: 19.5%;
+	margin-top: -4%;
+}
+.team-wrapper ul li.item .item-container {
+	transform: rotate(-45deg);
+	width: 150%;
+	margin: -25%;
+	position: relative;
+	cursor: pointer;
+}
+.team-wrapper ul li.item .item-container .overlay {
+	position: absolute;
+	display: none;
+	width: 100%;
+	text-align: center;
+	background: #0000006e;
+	right: 0;
+	left: 0;
+	transform: scale(2);
+	top: 0;
+
+	bottom: 0;
+	color: white;
+	font-size: 24px;
+}
+.team-wrapper ul li.item .item-container:hover .overlay {
+	transform: scale(1);
+	display: block;
+}
+.team-wrapper ul li.item .item-container .overlay .text {
+	margin-top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.5s linear;
+}
+.team-wrapper ul li.item .item-container .overlay .department {
+	text-align: center;
+	font-size: 16px;
+}
+
+.team-wrapper ul li.item:hover .item-container img {
+	transform: scale(0.7);
+	transition: transform 0.5s linear;
+}
+
+/* Responsive of Team Section */
+@media screen and (max-width: 992px) {
+	.team-wrapper ul li {
+		width: 20%;
+		margin-top: -5%;
+		margin-left: 10%;
+	}
+	.team-wrapper ul li.item:nth-child(5n + 4) {
+		margin-left: 25%;
+		margin-top: -4%;
+	}
+	.team-wrapper ul li.item:nth-child(7n + 5) {
+		margin-top: -5%;
+		margin-left: 10%;
+	}
+	.team-wrapper ul li.item .item-container .overlay {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.team-wrapper ul li {
+		width: 30%;
+		margin-top: -5%;
+		margin-left: 15%;
+	}
+	.team-wrapper ul li.item:nth-child(5n + 4) {
+		margin-left: 15%;
+		margin-top: -4%;
+	}
+	.team-wrapper ul li.item:nth-child(7n + 5) {
+		margin-top: -5%;
+		margin-left: 15%;
+	}
+	.team-wrapper ul li.item:nth-child(3n + 3) {
+		margin-left: 38%;
+		margin-top: -4%;
+	}
+	.team-wrapper ul li.item .item-container .overlay {
+		padding-top: 35%;
+		font-size: 14px;
+	}
+}
+/* Team Section Ends */
