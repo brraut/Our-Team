@@ -7,6 +7,8 @@ Step 1: Paste team-wrapper section from index page to your required section.
 Step 2: Copy entire style sheet code and paste it in your style sheet at any place.
 Hope this template helps you in your project.
 
+Demo: https://condescending-carson-082be9.netlify.com/
+
     Developed By:       Bishwo Raj Raut
 
     Contact:
